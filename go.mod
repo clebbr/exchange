@@ -1,4 +1,4 @@
-module github.com/asvvvad/exchange
+module github.com/clebbr/exchange
 
 go 1.14
 
