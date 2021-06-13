@@ -60,7 +60,9 @@ type query struct {
 	TimeFrame [2]string
 }
 
-var client http.Client = http.Client{}
+var client http.Client = http.Client{
+	Timeout: 10 * time.Second,
+}
 var cache *gocache.Cache
 
 // New creates a new instance of Exchange
